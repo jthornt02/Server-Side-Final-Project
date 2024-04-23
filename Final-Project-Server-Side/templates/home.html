@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block title %}
+US Army Hardware
+{% endblock %}
+{% block content %}
+<h1>If you need power armor come not further!</h1>
+<h2>Store Hardware</h2>
+
+<br></br>
+<br></br>
+
+<style>
+    div.mycontainer {
+      width:100%;
+      overflow:auto;
+    }
+    div.mycontainer div {
+      width:33%;  
+      float:left;
+    }
+    </style>
+    <body>
+    
+    <div class="mycontainer">
+    
+      <div>
+        <p><img src="{{ url_for('static', filename='T45.webp')}}" width="230" height="300"></p>
+        <h2>T-45</h2>
+        <p>The cheapest armor we have in stock.</p>
+        <p>Not the strongest but it will get the job done.</p>
+        <p>Price: $5,000,000</p>
+      </div>
+      
+      <div>
+        <p><img src="{{ url_for('static', filename='T51.webp')}}" width="230" height="300"></p>
+        <h2>T-51</h2>
+        <p>The next step up.</p>
+        <p>With a poly-laminate composite mixer, this armor provides protection from radiation and increased durability.</p>
+        <p>Price: $15,000,000</p>
+      </div>
+      
+      <div>
+        <p><img src="{{ url_for('static', filename='T60.webp')}}" width="230" height="300"></p>
+        <h2>T-60</h2>
+        <p>The workhorse of the US Army.</p>
+        <p>Top of the line electronics and the best armor rating available.</p>
+        <p>Price: $25,000,000</p>
+      </div>
+    
+    </div>
+    
+    </body>
+
+{% endblock %}
